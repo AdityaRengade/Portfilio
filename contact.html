@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        
+        <form id="contactForm" class="contact-form">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="tel" id="phone" placeholder="Phone Number">
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="subject" placeholder="Subject">
+                    <span class="focus"></span>
+                </div>
+            </div>
+            
+            <div class="textarea-field">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            
+            <div class="btn-box">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+            
+            <div id="form-message" class="form-message"></div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="form.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
